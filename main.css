@@ -9,6 +9,38 @@ body{
     padding: 20px 20px 20px 20px;
     margin: auto;
     position: relative;
-    top: 220px;
+    top: 120px;
     text-align:center;
+}
+
+#date-container{
+    padding: 10px;
+    font-size: 21px;
+}
+
+#year{
+    letter-spacing: 2px;
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+#month{
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+#time-container{
+    font-size: 80px;
+}
+
+#day-container{
+    padding-top: 10px;
+    display: flex;
+    /* text-align: center; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.current-day{
+    border-bottom: 2px solid saddlebrown;
 }
