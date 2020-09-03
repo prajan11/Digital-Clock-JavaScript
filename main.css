@@ -16,18 +16,19 @@ body{
     position: relative;
     top: 120px;
     text-align:center;
+    font-size: 1.5em;
+    box-sizing: border-box;
 }
 
 #date-container{
     font-family: cursive;
-    font-size: 21px;
     padding: 10px;
 }
 
 #year{
     letter-spacing: 2px;
     padding-left: 5px;
-    font-size: 25px;
+    font-size: 1.3em;
 }
 
 #month{
@@ -37,7 +38,7 @@ body{
 
 #time-container{
     font-family: 'Ticking Timebomb BB';
-    font-size: 120px;
+    font-size: 4em;
 }
 
 #day-container{
@@ -46,9 +47,31 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size:26px;
+    font-size:1.3em; 
 }
 
 .current-day{
     border-bottom: 2px solid saddlebrown;
+}
+
+
+@media only screen and (max-width: 1040px){
+    #clock-container{
+        width: 100%;
+        padding: 10px;
+        top: 20vh;
+        font-size: 1em;
+    }
+
+    #day-container{
+        justify-content: center;
+    }
+
+    #day-container span{
+        display: none;
+    }
+
+    #day-container span.current-day{
+        display: initial;
+    }
 }
